@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  exercisesApiKey: 'i2HxdoO2L4RMk7XemVFAgw==4XiFg7KKoY27MAuR',
-  googleApiKey: 'AIzaSyCSwxfqCSw-wnjj0MwUDJyixKRuCfu0joU',
+  exercisesApiKey: 'anapi',
+  googleApiKey: 'anotherone',
   firebaseConfig: {
     apiKey: "AIzaSyDTwrP11rsbVAfjV0xXI2-HpNuSL_tLeEo",
     authDomain: "workoutproject-fbddf.firebaseapp.com",
