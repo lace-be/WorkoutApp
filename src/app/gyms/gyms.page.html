@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Nearby gyms</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let center of fitnessCenters">
+      <ion-label>
+        <h2>{{ center.name }}</h2>
+        <p>{{ center.vicinity }}</p>
+        <p *ngIf="center.rating">Rating: {{ center.rating }}</p>
+        <p *ngIf="center.opening_hours?.open_now">Open now</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

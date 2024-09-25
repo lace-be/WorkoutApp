@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Progress</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item-group *ngFor="let month of getMonths()">
+      <ion-item-divider>
+        <ion-label>{{ month }}</ion-label>
+        <ion-button slot="end" (click)="photoService.takePhoto()">Add Photo</ion-button>
+      </ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" *ngFor="let photo of getPhotosByMonth(month); let i = index">
+            <ion-img [src]="photo.dataUrl" [routerLink]="['swipe', i]"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-group>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="photoService.takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

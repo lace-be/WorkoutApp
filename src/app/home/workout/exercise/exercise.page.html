@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Select Exercise</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home/workout"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar (ionInput)="onSearchChange($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let exercise of exercises" (click)="selectExercise(exercise)">
+      {{ exercise.name }}
+    </ion-item>
+  </ion-list>
+</ion-content>

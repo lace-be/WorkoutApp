@@ -1,0 +1,33 @@
+<ion-header *ngIf="!fullScreen">
+  <ion-toolbar>
+    <ion-title>Progress (Slide view)</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="toggleFullScreen()">
+        <ion-icon name="expand" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <swiper-container #swiperRef [initialSlide]="initialSlide" loop="true">
+    <swiper-slide *ngFor="let photo of photoService.photos">
+      <ion-img [src]="photo.dataUrl"></ion-img>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>
+
+<ion-footer *ngIf="!fullScreen">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="delete()">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

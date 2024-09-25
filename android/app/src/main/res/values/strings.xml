@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="app_name">workouts</string>
+  <string name="title_activity_main">workouts</string>
+  <string name="package_name">thomas.workouts.app</string>
+  <string name="custom_url_scheme">thomas.workouts.app</string>
+  <string name="facebook_app_id">501050979133632</string>
+</resources>

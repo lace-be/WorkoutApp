@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "467422303765",
+    "project_id": "workoutproject-fbddf",
+    "storage_bucket": "workoutproject-fbddf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467422303765:android:b2b66ecef18d0e336e201c",
+        "android_client_info": {
+          "package_name": "thomas.workouts.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQsAIZQVUtTYJaAQ8bOvVz8Guqmp5NVOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
