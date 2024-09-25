@@ -7,7 +7,7 @@ export const environment = {
   exercisesApiKey: 'anapi',
   googleApiKey: 'anotherone',
   firebaseConfig: {
-    apiKey: "AIzaSyDTwrP11rsbVAfjV0xXI2-HpNuSL_tLeEo",
+    apiKey: "yes",
     authDomain: "workoutproject-fbddf.firebaseapp.com",
     projectId: "workoutproject-fbddf",
     storageBucket: "workoutproject-fbddf.appspot.com",
